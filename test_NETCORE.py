@@ -8,7 +8,7 @@ Date modified: -
 
 HOW TO RUN THIS ALGORITHM
     - Load the test datasets from https://github.com/CarolinRi/NETCORE
-    - Unzip the file and place the folder into the same directory in which the test_NETCORE.py file is located (alternatively, you can change the list containing the filenames to include the respective directories)
+    - Unzip the file and place the folder into the same directory in which the test_NETCORE.py file is located (alternatively, you can change the list containing the filenames (line 22) to include the respective directories)
     - Make sure you have the NETCORE algorithm installed (easiest way: load NETCORE.py from https://github.com/CarolinRi/NETCORE) and have it in the same directory as the test_NETCORE.py file
     - if neccessary, install the required packages (mainly networkx and pandas) or directly use the anaconda environment accessible at https://github.com/CarolinRi/NETCORE. (easiest way is to import it via the Anaconda Navigator: https://anaconda.org/anaconda/anaconda-navigator)
     - run test_NETCORE.py

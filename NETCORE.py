@@ -4,7 +4,7 @@ import networkx as nx
 this code is provided as supplemental material to the publication "An Efficiency-Driven, Correlation-Based Feature Elimination Strategy for Small Data Sets" 
 by C. A. Rickert, M. Henkel, and O. Lieleg submitted to APL Machine Learning on August, 4th, 2022.
 
-version 1.0.1 (4th August, 2022)
+version 1.0.1 (initial setup: 4th August, 2022)
 
 last changed: October 26th, 2022
 """

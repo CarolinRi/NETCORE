@@ -1,6 +1,8 @@
 # NETCORE
 The NETCORE algorithm performs feature elimination considering both, multicollinearity of datasets and the reduction efficiency.
 
+Cite as: {Rickert, C.A., Henkel, M., and Lieleg, O., An Efficiency-Driven, Correlation-Based Feature Elimination Strategy for Small Data Sets, unpublished work}
+
 This repository contains the following files:
 - NETCORE.py:                   the source code for the NETCORE algorithm
 - LICENSE.md:                   the license under which the algorithm may be used

@@ -8,6 +8,14 @@ This repository contains the following files:
 - Test_datasets.zip:            5 molecular data sets used for testing: Antibiotics.csv, Fluorophores.csv, Vitamins.csv, Antioxidants.csv, Pooled.csv
 - test_NETCORE.py:              A python file to run and test the NETCORE algorithm (instructions how to use it are included in the file)
 
+One easy way how to use the NETCORE algorithm (for an example, please see test_NETCORE.py):
+1. Download the NETCORE.py script
+2. include the file into your code repository
+3. create a new python file
+4. in this file, import the NETCORE algorithm via "from NETCORE import *"
+5. to run it call the function "run_NETCORE(data, correlation_threshold)" - data should be provided as a pandas dataframe, the correlation threshold should be a number between 0 and 1
+
+
 
 MIT License
 

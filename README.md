@@ -6,6 +6,7 @@ This repository contains the following files:
 - LICENSE.md:                   the license under which the algorithm may be used
 - environment_NETCORE.yaml:     the Anaconda environment used during development and testing
 - Test_datasets.zip:            5 molecular data sets used for testing: Antibiotics.csv, Fluorophores.csv, Vitamins.csv, Antioxidants.csv, Pooled.csv
+- test_NETCORE.py:              A python file to run and test the NETCORE algorithm (instructions how to use it are included in the file)
 
 
 MIT License

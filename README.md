@@ -21,7 +21,7 @@ One easy way how to use the NETCORE algorithm (for an example, please see test_N
 2. include the NETCORE.py file into your code repository
 3. create a new python file (or use the file you want to use NETCORE with)
 4. in this file, import the NETCORE algorithm via "from NETCORE import *"
-5. to run it call the function "run_NETCORE(data, correlation_threshold)" - data should be provided as a pandas dataframe, the correlation threshold should be a number between 0 and 1
+5. to run it, call the function "run_NETCORE(data, correlation_threshold)" - data should be provided as a pandas dataframe, the correlation threshold should be a number between 0 and 1
 6. If you are missing any packages, either install them manually, or use the provided conda environment as described below
 
 _______________________________________________________________________________

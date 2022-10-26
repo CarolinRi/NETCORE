@@ -4,7 +4,7 @@ The NETCORE algorithm performs feature elimination considering both, multicollin
 This repository contains the following files:
 - NETCORE.py:                   the source code for the NETCORE algorithm
 - LICENSE.md:                   the license under which the algorithm may be used
-- environment_NETCORE.yat:      the Anaconda environment used during development and testing
+- environment_NETCORE.yaml:     the Anaconda environment used during development and testing
 - test datasets.zip:            5 molecular data sets used for testing: Antibiotics.csv, Fluorophores.csv, Vitamins.csv, Antioxidants.csv, Pooled.csv
 
 

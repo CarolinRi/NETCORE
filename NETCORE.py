@@ -4,11 +4,13 @@ import networkx as nx
 this code is provided as supplemental material to the publication "An Efficiency-Driven, Correlation-Based Feature Elimination Strategy for Small Data Sets" 
 by C. A. Rickert, M. Henkel, and O. Lieleg submitted to APL Machine Learning on August, 4th, 2022.
 
-version 1.0.0 (4th August, 2022)
+version 1.0.1 (4th August, 2022)
+
+last changed: October 26th, 2022
 """
 
-# input: data as a pandas dataframe, t_corr (desired correlation threshold); output: reduced feature vector
-def network_based_elimination(data, t_corr):
+# input: data as a pandas dataframe, t_corr (desired correlation threshold, a number between 0 and 1); output: reduced feature vector
+def run_NETCORE(data, t_corr):
 
     corrMatrix = create_corr(data)
 

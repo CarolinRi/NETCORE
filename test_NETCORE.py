@@ -31,4 +31,4 @@ for name in filenames:
     data = pd.read_csv(name)
 
     # run the NETCORE algorithm
-    network_based_elimination(data, t_corr)
+    run_NETCORE(data, t_corr)

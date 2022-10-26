@@ -18,6 +18,9 @@ One easy way how to use the NETCORE algorithm (for an example, please see test_N
 5. to run it call the function "run_NETCORE(data, correlation_threshold)" - data should be provided as a pandas dataframe, the correlation threshold should be a number between 0 and 1
 
 
+In the afore mentioned publication, six datasets were tested, five of which (molecular datasets including either antibiotics, fluorophores, vitamins, antioxidants, or all of those pooled together) can be found in this repository (Test_datasets.zip). The 6th dataset (BACE) can be obtained via https://moleculenet.org/datasets-1 (last accessed: October 26th, 2022).
+
+
 
 MIT License
 

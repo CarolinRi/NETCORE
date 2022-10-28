@@ -37,7 +37,7 @@ _______________________________________________________________________________
 
 Datasets:
 
-In the afore mentioned publication, six datasets were tested, five of which (molecular datasets including either antibiotics, fluorophores, vitamins, antioxidants, or all of those pooled together) can be found in this repository (Test_datasets.zip). The 6th dataset (BACE) can be obtained via https://moleculenet.org/datasets-1 (last accessed: October 26th, 2022).
+In the aforementioned publication, six datasets were tested, five of which (molecular datasets including either antibiotics, fluorophores, vitamins, antioxidants, or all of those pooled together) can be found in this repository (Test_datasets.zip). The 6th dataset (BACE) can be obtained via https://moleculenet.org/datasets-1 (last accessed: October 26th, 2022).
 
 _______________________________________________________________________________
 MIT License

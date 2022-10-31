@@ -1,4 +1,6 @@
 import networkx as nx
+import numpy as np
+import pandas as pd
 
 """
 this code is provided as supplemental material to the publication "An Efficiency-Driven, Correlation-Based Feature Elimination Strategy for Small Data Sets" 
@@ -6,7 +8,7 @@ by C. A. Rickert, M. Henkel, and O. Lieleg submitted to APL Machine Learning on 
 
 version 1.0.1 (initial setup: 4th August, 2022)
 
-last changed: October 26th, 2022
+last changed: October 31st, 2022
 """
 
 # input: data as a pandas dataframe, t_corr (desired correlation threshold, a number between 0 and 1); output: reduced feature vector
@@ -40,6 +42,11 @@ def create_corr(data):
 
     corrMatrix = data.corr(method='pearson')
     corrMatrix = corrMatrix.astype(float, errors='raise')
+
+    corrMatrix = corrMatrix.dropna(how='all', axis=1, inplace=False)
+    corrMatrix = corrMatrix.dropna(how='all', axis=0, inplace=False)
+
+    assert np.array_equal(corrMatrix.columns.values, corrMatrix.index.values), "Dimension mismatch occuring in the correlation matrix." 
 
     assert corrMatrix.isnull().values.sum() == 0, "The correlation matrix was not successfully created."
 

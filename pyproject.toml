@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "netcore"
+dynamic = ["version"]
+description = "Network-based correlation feature elimination for small datasets"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+dependencies = [
+    "networkx>=3.6.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9",
+    "ruff>=0.15",
+]
+
+[tool.hatch.version]
+path = "src/netcore/__init__.py"
+
+# Hatchling: src/netcore/ → Modul "netcore" (Standard-src-Layout)
+
+# uv installiert das lokale Projekt standardmäßig als "editable" (.pth mit absolutem Pfad).
+# Python wertet solche .pth-Zeilen nicht korrekt aus → import netcore schlägt fehl.
+# Deshalb: uv sync --no-editable (siehe README / unten).
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
